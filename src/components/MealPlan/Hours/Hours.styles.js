@@ -5,7 +5,8 @@ import {
     fonts,
     fontsSizes,
     fontsWeights,
-    mediaMobile
+    mediaMobile,
+    mediaTablet
 } from '../../../helpers/styles.js'
 import BgPattern from '../../../assets/images/bgpattern.png';
 
@@ -36,6 +37,15 @@ export const Hour = styled.div`
     font-weight: ${fontsWeights.bold};
     color: ${colors.textInfoBox};
     border-bottom: 2px solid ${colors.lightGray};
+    @media ${mediaTablet}{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @media ${mediaMobile}{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     span{
         font-weight: ${fontsWeights.medium};
     }
@@ -51,5 +61,14 @@ export const Workout = styled.div`
     text-align: left;
     line-height: 1.3;
     border-bottom: 2px solid ${colors.lightGray};
+
+    @media ${mediaTablet}{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @media ${mediaMobile}{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 `
 

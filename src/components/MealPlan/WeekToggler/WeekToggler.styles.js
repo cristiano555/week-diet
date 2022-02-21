@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { autoSize } from '../../../helpers/styles.js'
 import {
+    autoSize,
     colors,
     fonts,
     fontsSizes,
@@ -14,10 +14,13 @@ import RightArrowImg from "../../../assets/images/rightarrow.png"
 export const WeekTogglerElement = styled.div`
     grid-column-start: 2;
     grid-column-end: 3;
-
-    @media ${mediaMobile} {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    @media ${mediaTablet} {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 3;
+        text-align: center;
+        margin-bottom: 30px;
     }
 `
 
@@ -31,7 +34,7 @@ export const LeftArrow = styled.button`
     background-image: url("${LeftArrowImg}");
 
     @media ${mediaTablet} {
-        margin: auto ${autoSize(20, 'tablet')} auto 0;
+        margin: auto ${autoSize(25, 'tablet')} auto 0;
     }
 `
 
@@ -43,7 +46,10 @@ export const Title = styled.p`
     display: inline-block;
     width: 190px;
     @media ${mediaTablet} {
-        width: ${autoSize(190, 'tablet')};
+        width: ${autoSize(300, 'tablet')};
+    }
+    @media ${mediaMobile} {
+        width: ${autoSize(450, 'mobile')};
     }
 `
 
@@ -57,6 +63,6 @@ export const RightArrow = styled.button`
     background-image: url("${RightArrowImg}");
 
     @media ${mediaTablet} {
-        margin: auto 0  auto ${autoSize(20, 'tablet')};
+        margin: auto 0 auto ${autoSize(25, 'tablet')} ;
     }
 `

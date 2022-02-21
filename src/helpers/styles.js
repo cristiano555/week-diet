@@ -91,6 +91,10 @@ const GlobalStyles = createGlobalStyle`
     body{
         background-color: ${colors.mainBackground};
     }
+
+    .slick-prev:before, .slick-next:before {
+        display: none;
+    }
  
     @font-face {
         font-family: "HelveticaNeue";

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { autoSize } from '../../helpers/styles.js'
 import {
+    autoSize,
     colors,
     fonts,
     fontsSizes,

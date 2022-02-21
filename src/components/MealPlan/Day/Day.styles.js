@@ -18,6 +18,12 @@ export const DayElement = styled.div`
     .active{
         border: 3px solid ${colors.red}; 
     }
+
+    .slick-prev{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
 `
 
 export const DayTitle = styled.h3`
